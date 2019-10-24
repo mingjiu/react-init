@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
+import { Button } from 'antd'
 import { clickPlusRightNow, clickPlusAsync } from '../../actions/app'
 
 @connect(({
@@ -29,8 +30,8 @@ class Test extends React.Component{
     let { handleClick, handleClick1 } = this
     return <div>
       你点击了 {clickCount} 次<br />
-      <button onClick={handleClick.bind(this)}>+1</button>
-      <button onClick={handleClick1.bind(this)} disabled={uiState.isLoading}>+1 delay</button>
+      <Button onClick={handleClick.bind(this)}>+1</Button>
+      <Button onClick={handleClick1.bind(this)} disabled={uiState.isLoading}>+1 async</Button>
       <Link to='/page'>to /Page</Link>
     </div>
   }
