@@ -1,5 +1,4 @@
 {
-  "parser": "babel-eslint",
   "env": {
     "browser": true,
     "node": true,
@@ -8,37 +7,5 @@
     "jest": true,
     "jasmine": true
   },
-  "plugins": ["prettier", "react"],
-  "rules": {
-    "react/prop-types": 0,
-    "react/jsx-one-expression-per-line": 0,
-    "react/destructuring-assignment": 0,
-    "react/require-default-props": 0,
-    "jsx-a11y/click-events-have-key-events": 0,
-    "jsx-a11y/no-noninteractive-element-interactions": 0,
-    "import/no-unresolved":0,
-    "react/no-array-index-key":0,
-    "jsx-a11y/anchor-is-valid":0,
-    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
-    "camelcase": 0,
-    "jsx-a11y/no-static-element-interactions": 0,
-    "no-script-url": 0,
-    "no-console": 0,
-    "import/order": 0,
-    "prefer-rest-params": 0,
-    "func-names": 0,
-    "comma-spacing": "warn",
-    "global-require": 0
-  },
-  "globals": {
-    "fetch": true
-  },
-  "parserOptions": {
-    "ecmaFeatures": {
-      "experimentalObjectRestSpread": true
-    }
-  },
-  "settings": {
-    "polyfills": ["fetch", "promises"]
-  }
+  "extends": "react-app" 
 }
