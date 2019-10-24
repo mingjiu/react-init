@@ -7,5 +7,5 @@
     "jest": true,
     "jasmine": true
   },
-  "extends": "react-app" 
+  "extends": "react-app"
 }

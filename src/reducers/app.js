@@ -10,10 +10,17 @@ const app = handleActions({
         ...state.uiState
       }
     }
+  },
+  CLICK_PLUS: state => {
+    return {
+      ...state,
+      clickCount: state.clickCount + 1
+    }
   }
 }, {
   uiState: {
-    isLoading: true
-  }
+    isLoading: false
+  },
+  clickCount: 0
 })
 export default app
