@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { clickPlusRightNow, clickPlusAsync } from '../../actions/app'
 
@@ -30,6 +31,7 @@ class App extends React.Component{
       你点击了 {clickCount} 次<br />
       <button onClick={handleClick.bind(this)}>+1</button>
       <button onClick={handleClick1.bind(this)} disabled={uiState.isLoading}>+1 delay</button>
+      <Link to='/page'>to /Page</Link>
     </div>
   }
 }
