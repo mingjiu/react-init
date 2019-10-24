@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { Button } from 'antd'
 import { clickPlusRightNow, clickPlusAsync } from '../../actions/app'
-import styles from  './index.module.css'
+import styles from  './index.scss'
 console.log(styles)
 
 @connect(({
