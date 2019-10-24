@@ -1,1 +1,1 @@
-react + redux + 国际化
+react + redux + i18n
