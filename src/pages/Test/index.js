@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { clickPlusRightNow, clickPlusAsync } from '../../actions/app'
@@ -10,7 +10,7 @@ import { clickPlusRightNow, clickPlusAsync } from '../../actions/app'
     app
   }
 })
-class App extends React.Component{
+class Test extends React.Component{
 
   componentDidMount () {
     console.log(this.props)
