@@ -1,7 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux'
 import { clickPlusRightNow, clickPlusAsync } from '../../actions/app'
-import './index.css';
 
 @connect(({
   app
