@@ -46,6 +46,8 @@
     "jest-environment-jsdom-fourteen": "0.1.0",
     "jest-resolve": "24.9.0",
     "jest-watch-typeahead": "0.4.0",
+    "koa": "^2.10.0",
+    "koa-static": "^5.0.0",
     "mini-css-extract-plugin": "0.8.0",
     "node-sass": "^4.13.0",
     "optimize-css-assets-webpack-plugin": "5.0.3",
@@ -79,7 +81,9 @@
     "workbox-webpack-plugin": "4.3.1"
   },
   "scripts": {
-    "start": "node scripts/start.js",
+    "start": "yarn dev & yarn dev:server",
+    "dev": "node scripts/start.js",
+    "dev:server": "node devServer.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
     "i18n": "NODE_ENV=development node scripts/i18n.js"

@@ -7,7 +7,7 @@ import { Button } from 'antd'
 import { clickPlusRightNow, clickPlusAsync } from '../../actions/app'
 import styles from  './index.scss'
 
-@withTranslation('trans')
+@withTranslation(['trans'])
 @connect(({
   app
 }) => {
@@ -17,7 +17,7 @@ import styles from  './index.scss'
 })
 class Test extends React.Component{
   state = {
-    language: ['zh-TW', 'en-US']
+    language: ['zh', 'en']
   }
 
   componentDidMount () {
@@ -44,11 +44,12 @@ class Test extends React.Component{
     let { clickCount, uiState } = this.props.app
     let { handleClick, handleClick1, languageChange } = this
     return <div className={styles.test}>
-      {t('test_trans')} {clickCount} 次<br />
+      {t('testTrans')} {clickCount} 次<br />
       <Button onClick={handleClick.bind(this)}>+1</Button>
       <Button onClick={handleClick1.bind(this)} disabled={uiState.isLoading}>+1 async</Button>
       <br /><br /><br />
-      <Button onClick={languageChange.bind(this)}>{t('change_language')}</Button><br />
+      <Button onClick={languageChange.bind(this)}>{t('changeLanguage')}</Button><br />
+      <div>{t('test1')}</div>
       <br /><br />
       <Link to='/page'>to /Page</Link>
     </div>

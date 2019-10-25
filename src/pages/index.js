@@ -10,11 +10,11 @@ import { setAntdLocale } from '../utils/i18n'
 export default function App () {
   return (
     <Provider store={store}>
-      <ConfigProvider locale={setAntdLocale('zh-TW')}>
+      <ConfigProvider locale={setAntdLocale('zh')}>
         <BrowserRouter>
           <Switch>
-            <Route path='/page' component={Page}/>
-            <Route path='/' component={Test}/>
+            <Route sensitive path='/page' component={Page}/>
+            <Route sensitive path='/' component={Test}/>
           </Switch>
         </BrowserRouter>
       </ConfigProvider>
